@@ -12,5 +12,15 @@
         "title": "Notes title goes here",
         "text": "Need to add note here",
         "note_id": "40b69e46-2062-4cb8-a3f8-2c060b4122eb"
+    },
+    {
+        "title": "A new note goes here",
+        "text": "New note here",
+        "note_id": "e9e23ff9-4115-4319-a591-a115140c1c84"
+    },
+    {
+        "title": "Another Note Goes Here",
+        "text": "Adding more notes",
+        "note_id": "8fc57bd9-61d7-41c7-b222-587465404976"
     }
 ]

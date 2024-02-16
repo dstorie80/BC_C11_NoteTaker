@@ -1,26 +1,27 @@
 [
     {
         "title": "Test Title",
-        "text": "Test text"
+        "text": "Test text",
+        "id": "40b69e46-2062-4cb8-a3f8-2c060b4122ed"
     },
     {
         "title": "Take 75",
         "text": "notes",
-        "note_id": "4a934a54-c37b-4532-9bb7-4e7dec7a1343"
+        "id": "4a934a54-c37b-4532-9bb7-4e7dec7a1343"
     },
     {
         "title": "Notes title goes here",
         "text": "Need to add note here",
-        "note_id": "40b69e46-2062-4cb8-a3f8-2c060b4122eb"
+        "id": "40b69e46-2062-4cb8-a3f8-2c060b4122eb"
     },
     {
         "title": "A new note goes here",
         "text": "New note here",
-        "note_id": "e9e23ff9-4115-4319-a591-a115140c1c84"
+        "id": "e9e23ff9-4115-4319-a591-a115140c1c84"
     },
     {
         "title": "Another Note Goes Here",
         "text": "Adding more notes",
-        "note_id": "8fc57bd9-61d7-41c7-b222-587465404976"
+        "id": "8fc57bd9-61d7-41c7-b222-587465404976"
     }
 ]

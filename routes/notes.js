@@ -7,7 +7,7 @@ notes.get('/', (req, res) => {
   readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
 });
 
-// POST Route for a new UX/UI tip
+// POST Route for a new note
 notes.post('/', (req, res) => {
   console.log(req.body);
 
@@ -17,7 +17,7 @@ notes.post('/', (req, res) => {
     const newNote = {
       title,
       text,
-      note_id: uuidv4(),
+      id: uuidv4(),
     };
 
   readAndAppend(newNote, './db/db.json');
@@ -36,12 +36,32 @@ notes.get('/:id', (req, res) => {
   readFromFile('./db/db.json')
     .then((data) => JSON.parse(data))
     .then((json) => {
-      const result = json.find((note) => note.note_id === noteId);
+      const result = json.find((note) => note.id === noteId);
       return result
         ? res.json(result)
         : res.json('Error: No note found with that id');
     });
-});
+
+  });
+
+    // Delete Route for a specific note
+notes.delet('/:id', (req, res) => {
+  const noteId = req.params.id;
+  readFromFile('./db/db.json')
+    .then((data) => JSON.parse(data))
+    .then((json) => {
+      const result = json.find((note) => note.id === noteId);
+      return result
+        ? res.json(result)
+        : res.json('Error: No note found with that id');
+    });
+
+  });
+
+
+
+
+
 
 });
 
